@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Single = ({item}) => {
+const Single = ({ item }) => {
   return (
     <li className="col l6 s12">
       <div className="card">
@@ -26,11 +26,11 @@ const Single = ({item}) => {
       </div>
       <br/>
     </li>
-  );
-};
+  )
+}
 
 Single.propTypes = {
   item: PropTypes.object.isRequired
-};
+}
 
-export default Single;
+export default Single

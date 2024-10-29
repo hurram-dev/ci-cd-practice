@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Single from './Single';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Single from './Single'
 
 export default class Grid extends Component {
-  renderList() {
+  renderList () {
     return this.props.items.map((item) => (
       <Single key={item.id} item={item}/>
-    ));
+    ))
   }
 
-  render() {
-    return(
+  render () {
+    return (
       <div>
         <div className="row">
           <ul>
@@ -24,4 +24,4 @@ export default class Grid extends Component {
 
 Grid.propTypes = {
   items: PropTypes.array.isRequired
-};
+}
